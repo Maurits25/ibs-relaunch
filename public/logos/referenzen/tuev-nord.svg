@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" role="img" aria-label="TÜV Nord">
+  <title>TÜV Nord</title>
+  <g>
+    <rect x="0" y="6" width="56" height="48" fill="#1E66B5" rx="2"/>
+    <text x="6" y="40" font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+          font-weight="900" font-size="22" letter-spacing="1"
+          fill="white">TÜV</text>
+    <text x="64" y="32" font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+          font-weight="800" font-size="22" letter-spacing="0"
+          fill="#1E66B5">NORD</text>
+    <text x="64" y="48" font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+          font-weight="400" font-size="10" letter-spacing="1.5"
+          fill="#1E66B5">GROUP</text>
+  </g>
+</svg>

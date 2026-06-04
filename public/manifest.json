@@ -1,0 +1,13 @@
+{
+  "name": "IBS Industriebodensanierung Schmäing",
+  "short_name": "IBS Schmäing",
+  "description": "Fachbetrieb für Industriebodensanierung, Epoxidharzbeschichtungen, WHG-Beschichtungen, Versiegelungen, Fugensanierung und Steinteppich – aus Bocholt am Niederrhein.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0E1417",
+  "theme_color": "#E87722",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

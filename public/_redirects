@@ -1,0 +1,18 @@
+# Legacy / Alias-Redirects — bestehende Top-Rankings schützen
+/index.php             /                       301!
+/index.html            /                       301!
+/home                  /                       301!
+/startseite            /                       301!
+/epoxidharzbeschichtung   /beschichtung/       301!
+/sanierung             /versiegelungen/        301!
+/sanierungen           /versiegelungen/        301!
+/steinteppich          /dekorbelaege/          301!
+/designboden           /betonoptik/            301!
+/designboeden          /betonoptik/            301!
+/balkonsanierung       /balkon/                301!
+/balkonsanierungen     /balkon/                301!
+
+# WordPress Reste
+/?p=*                  /                       301
+/wp-admin/*            /                       410
+/wp-login.php          /                       410

@@ -1,0 +1,650 @@
+// Einsatzbereich-Detail-Pages (Anwendungs-Cluster).
+// Quellen: research/02-einsatzbereiche.md, 03-tier1-conversion-hubs.md
+// Compliance: Sachkundenachweis (kein WHG-Fachbetrieb), Marken Remmers/KLB/Korodur, keine Pauschalpreise.
+
+import type { Service } from './services'
+
+export const EINSATZBEREICH_PAGES: Service[] = [
+  // ============================================================ /einsatzbereiche/lagerhalle-logistik/
+  {
+    slug: 'lagerhalle-logistik',
+    href: '/einsatzbereiche/lagerhalle-logistik/',
+    title: 'Lagerhalle & Logistik — Bodenbeschichtung für Stapler­verkehr',
+    shortTitle: 'Lagerhalle & Logistik',
+    metaTitle: 'Lagerhalle Bodenbeschichtung · Stapler­verkehr | IBS',
+    metaDescription:
+      'Bodenbeschichtung für Lagerhalle und Logistik: Schwerlast-belastbar, mit Markierungen nach ASR A1.3, rutschhemmend R10/R11. Nach DIN EN 13813 und AGI A40 — vom Sachkunde-Verarbeiter aus Bocholt.',
+    hero: {
+      eyebrow: 'Einsatzbereich · Industrie',
+      headline: 'Lagerhallen-Boden, der Stapler­verkehr und Schwerlast verkraftet.',
+      sub: 'Reaktionsharz-Beschichtungen für Lager- und Logistik­flächen mit Stapler­verkehr, Schwerlast­regalen und Tausalzeintrag im Eingangsbereich. Mit Markierungen und Sicherheits­kennzeichnung nach ASR A1.3.',
+      bullets: [
+        'Stapler- und Schwerlast-tauglich',
+        'Markierungen nach DGUV V8 / ASR A1.3',
+        'Schnelltechnik im laufenden Betrieb',
+      ],
+    },
+    intro:
+      'In Lagerhallen entscheidet die Boden­qualität über Effizienz und Betriebskosten. Punktlasten aus Regalbeinen, Reifenabrieb, Bremsspuren, Tausalzeintrag im Eingang und Schmiermitteltropfen wirken auf den Boden ein. IBS Schmäing realisiert Logistik-Böden als Reaktionsharz-Beschichtung oder Mörtelbelag nach DIN EN 13813, ergänzt um Sicherheits­markierungen nach ASR A1.3.',
+    suitableFor: [
+      'Hochregallager und Schmalganglager',
+      'Kommissionier- und Versandbereiche',
+      'Wareneingang und -ausgang',
+      'Logistikhallen mit Mischbetrieb',
+      'Cross-Docking-Zentren',
+      'Tiefkühl- und Frischelogistik',
+    ],
+    problems: [
+      { title: 'Punktlasten aus Regalbeinen', text: 'Schwerlast­regale konzentrieren mehrere Tonnen auf wenige cm² — bei Überschreitung droht Durchstanzen der Bodenplatte.' },
+      { title: 'Reifen­abrieb und Bremsspuren', text: 'Tägliche Stapler­bewegungen erzeugen Spurrillen und schwarze Streifen — Boden wird unansehnlich und rutschig.' },
+      { title: 'Tausalz im Eingang', text: 'Winter­eintrag von Salz und Wasser greift Beton im Toröffnungs­bereich besonders an.' },
+    ],
+    solution: {
+      title: 'System nach Belastungs­klasse — mit Markierungs­plan',
+      text: 'Wir bewerten Belastungs­klasse (DIN 18560-7 / DIN EN 13813) und Tätigkeits­bereich. Daraus folgt System, Schicht­dicke und Markierungs­plan. Sichere Verkehrs­wege, Sperr- und Lagerzonen sind nach DGUV V8 und ASR A1.3 zu kennzeichnen.',
+      bullets: [
+        'EP-Beschichtung 0,8–1,5 mm für Standard-Lager',
+        'EP-Mörtelbelag 4–6 mm für Hochregallager',
+        'Markierungen für Verkehrs­wege, Sperr- und Lagerflächen',
+        'Hohe Punktlasten: Korodur-Hartstoff­einstreuung',
+        'PU-Versiegelung in Eingangs­bereichen (Tausalz)',
+      ],
+    },
+    process: [
+      { title: '01 · Belastungs­analyse', text: 'Stapler-Typ, Regallasten, Tätigkeiten, Markierungs­bedarf — schriftlich.' },
+      { title: '02 · System & Plan', text: 'Schicht­aufbau, Material, Markierungs­plan mit Festpreis.' },
+      { title: '03 · Vorbereitung', text: 'Untergrund­vorbereitung, Reparaturen, Grundierung — auch zonenweise.' },
+      { title: '04 · Beschichtung', text: 'Schichtweiser Auftrag, danach Markierungen.' },
+      { title: '05 · Übergabe', text: 'Begehung, Pflege­hinweise, Markierungs­plan als Dokumentation.' },
+    ],
+    benefits: [
+      'Stapler- und Schwerlast-tauglich',
+      'Markierungen nach ASR A1.3 / DGUV V8',
+      'Pflegeleicht – fugenlos',
+      'Schnell wieder belastbar mit PMMA-Technik',
+      'Sanierung im laufenden Betrieb möglich',
+    ],
+    materials: [
+      { title: 'Remmers EP-System', text: 'Reaktionsharz-Beschichtung 0,8–1,5 mm für Standardflächen.' },
+      { title: 'Korodur Hartstoff­einstreu', text: 'Für Hochregallager und Stoßzonen — Erhöhung der Verschleißfestigkeit.' },
+      { title: 'KLB Mörtelbelag', text: 'Für höchste Punktlasten und Stoßzonen 4–6 mm.' },
+    ],
+    industries: [
+      'Logistik-Dienstleister',
+      'Handels­distributoren',
+      'Produktionslager',
+      'E-Commerce-Fulfillment',
+      'Tiefkühl- und Frische­logistik',
+    ],
+    faqs: [
+      { q: 'Welche Belastungs­klasse für ein Schmalganglager?',
+        a: 'Schmalganglager mit Hochregalstaplern erzeugen sehr hohe Punktlasten an den Regalbeinen. Marktüblich werden hier Mörtelbeläge ab 4 mm oder Hartstoff-Einstreuungen eingesetzt, mindestens DIN 18560-7 Beanspruchungs­klasse I.' },
+      { q: 'Können Markierungen später erneuert werden?',
+        a: 'Ja. Wir setzen Markierungs­farben so auf, dass sie nach Verschleiß lokal überstrichen werden können — ohne die ganze Beschichtung neu zu machen.' },
+      { q: 'Was kostet eine Lagerhallen-Beschichtung?',
+        a: 'Marktüblich 2026 zwischen 35 und 120 €/m² inkl. Untergrund­vorbereitung — abhängig von Belastung, Schicht­dicke und Markierungs­aufwand. Wir kalkulieren nach Aufmaß.' },
+      { q: 'Brauchen Logistikflächen Rutsch­hemmung?',
+        a: 'Ja, mindestens R9–R10. Im Eingangs­bereich (Nässe, Tausalz) empfehlen wir R11. Sicherheits­vorgaben Ihrer BG bitte prüfen.' },
+      { q: 'Können Sie nachts arbeiten?',
+        a: 'Ja. Mit PMMA-Schnellsystemen sind Zonen nach 1–3 Stunden wieder befahrbar — ideal für 24/7-Logistik.' },
+    ],
+    keywords: [
+      'bodenbeschichtung lagerhalle', 'bodenbeschichtung industriehalle', 'bodenbeschichtung industrieböden', 'industriehalle bodenbeschichtung', 'lagerhalle beschichtung', 'logistik bodenbeschichtung', 'industrielle bodenbeschichtung',
+    ],
+    image: '/images/scenes/lagerhalle-logistik-hero.jpg',
+    thumbnail: '/images/scenes/lagerhalle-logistik-hero.jpg',
+  },
+
+  // ============================================================ /einsatzbereiche/produktion-werkstatt/
+  {
+    slug: 'produktion-werkstatt',
+    href: '/einsatzbereiche/produktion-werkstatt/',
+    title: 'Produktion & Werkstatt — Bodensystem für Metall, Kfz und Maschinenbau',
+    shortTitle: 'Produktion & Werkstatt',
+    metaTitle: 'Produktion Werkstatt Bodenbeschichtung Bocholt | IBS',
+    metaDescription:
+      'Bodenbeschichtung für Produktion, Werkstatt, Metallverarbeitung und Maschinenbau: ölbeständig, R10/R11, mit Markierungen. PMMA-Schnellsysteme für laufenden Betrieb.',
+    hero: {
+      eyebrow: 'Einsatzbereich · Produktion',
+      headline: 'Produktions- und Werkstatt­böden mit Industrie-Anspruch.',
+      sub: 'Reaktionsharz-Beschichtungen für Kfz-Werkstatt, Metall­verarbeitung, Maschinenbau und Lackiererei — beständig gegen Öl, Kühlschmierstoff, Säuren und Stoßlasten von Hebebühnen.',
+      bullets: [
+        'Beständig gegen Öl & Kühlmittel',
+        'R10/R11 nach Tätigkeit',
+        'ESD optional für Elektronik',
+      ],
+    },
+    intro:
+      'Produktions- und Werkstatt­böden vereinen viele Anforderungen: Punktlasten von Hebebühnen, Stoßbelastung durch fallende Werkzeuge, Schmierstoffe, Säuren, Kühl­schmiermittel. IBS realisiert hier 2K-EP- oder PU-Beschichtungen mit passender Rutsch­hemmung, Markierungen und optional ESD-Ausführung für Elektronik-Fertigung.',
+    suitableFor: [
+      'Kfz- und Nutzfahrzeug-Werkstätten',
+      'Metallverarbeitung (Schlosserei, Schweißerei)',
+      'Maschinen- und Werkzeugbau',
+      'Lackier- und Vorbereitungs­hallen',
+      'Holzverarbeitung',
+      'Elektronik- und Sensorik-Fertigung (ESD)',
+    ],
+    problems: [
+      { title: 'Schmierstoffe und Bremsflüssigkeit', text: 'Ölreste ziehen in unbehandelten Beton, machen ihn rutschig und unschön.' },
+      { title: 'Punktlasten Hebebühne', text: 'Hebebühnen-Stützen konzentrieren Lasten auf wenige cm² — klassische Estriche brechen.' },
+      { title: 'Schweißfunken und Brennspuren', text: 'Punktuelle Hitze zerstört starre Beschichtungen — PU verkraftet das besser.' },
+      { title: 'Säurebelastung in Galvanik', text: 'Beizmittel, Säuren und Laugen greifen unbeschichteten Beton an.' },
+    ],
+    solution: {
+      title: 'System nach Tätigkeit',
+      text: '2K-Epoxidharz für die klassische Werkstatt, PU für höhere thermische Belastung, Mörtelbelag bei Punktlasten, ESD-Ausführung in Elektronik. Markierungs­plan nach ASR A1.3 für Verkehrs- und Sicherheits­zonen.',
+      bullets: [
+        '2K-EP für Standard-Werkstatt',
+        'PU für Lackiererei und Wärme­belastung',
+        'Korodur-Hartstoff für Hebebühnen­bereiche',
+        'ESD für Elektronik-Fertigung',
+        'Markierungen nach ASR A1.3 / DGUV V8',
+      ],
+    },
+    process: [
+      { title: '01 · Bedarfsanalyse', text: 'Tätigkeit, Belastung, Stoffe, BG-Vorgaben, Markierungs­bedarf.' },
+      { title: '02 · System & Markierung', text: 'Schicht­aufbau, Material, Markierungs­plan, Festpreis.' },
+      { title: '03 · Vorbereitung', text: 'Schleifen oder Strahlen, Reparatur, Grundierung.' },
+      { title: '04 · Beschichtung', text: 'Schicht­weiser Auftrag, Markierungen, Versiegelung.' },
+      { title: '05 · Übergabe', text: 'Begehung, Pflege­hinweise, Markierungs­plan.' },
+    ],
+    benefits: [
+      'Beständig gegen Öl, Säuren, Kühlmittel',
+      'Markierungs­konform nach BG',
+      'ESD und Rutsch­hemmung kombinierbar',
+      'Schnell wieder belastbar mit PMMA',
+      'Sanierung möglich im laufenden Betrieb',
+    ],
+    materials: [
+      { title: 'Remmers Werkstatt-EP', text: '2K-Epoxidharz für Standard-Kfz und Metallverarbeitung.' },
+      { title: 'KLB PU-Beschichtung', text: 'Für thermische und chemische Sonderbelastung (Lackiererei, Schweißerei).' },
+      { title: 'Korodur Hartstoff', text: 'Hebebühnen-Bereiche und Stoßzonen.' },
+    ],
+    industries: [
+      'Kfz-Werkstatt (Pkw, Nutzfahrzeug, Bus)',
+      'Metallverarbeitung',
+      'Maschinen- und Werkzeugbau',
+      'Lackiererei',
+      'Holzverarbeitung',
+      'Elektronik- und Sensorik-Fertigung',
+    ],
+    faqs: [
+      { q: 'Welcher Boden für eine Kfz-Werkstatt?',
+        a: '2K-Epoxidharz in 0,8–1,5 mm mit R10/R11 und Markierungen ist Standard. Bei sehr nasser Arbeit oder Bremsflüssigkeit empfehlen wir PU mit R12.' },
+      { q: 'Brauche ich ESD?',
+        a: 'Pflicht in Elektronik-, Sensorik- und Halbleiter-Fertigung sowie in Ex-Zonen. Empfohlen in Pharma und Reinraum. Wir messen den Widerstand nach DIN EN 61340-4-1 und dokumentieren.' },
+      { q: 'Können Sie im laufenden Betrieb sanieren?',
+        a: 'Ja, zonenweise. Mit PMMA-Schnellsystemen ist eine Zone nach 1–3 Stunden wieder belastbar. Klassisches EP braucht 24–72 h Aushärtung pro Schicht.' },
+      { q: 'Was kostet ein Werkstattboden?',
+        a: 'Marktüblich 2026 50–120 €/m² nach Belastung. Bei ESD oder Markierungs-intensiven Lösungen höher. Festpreis nach Aufmaß.' },
+      { q: 'Welche Lebens­dauer ist realistisch?',
+        a: 'Bei sachgerechter Ausführung 15–25 Jahre. Bei sehr hoher Punktlast (Hebebühne, Stapler) Kontroll­intervall jährlich empfohlen.' },
+    ],
+    keywords: [
+      'werkstatt bodenbeschichtung', 'bodenbeschichtung werkstatt', 'kfz werkstatt bodenbeschichtung', 'produktion bodenbeschichtung', 'maschinenbau boden', 'metallverarbeitung bodenbeschichtung', 'lackiererei boden',
+    ],
+    image: '/images/scenes/produktion-werkstatt-hero.jpg',
+    thumbnail: '/images/scenes/produktion-werkstatt-hero.jpg',
+  },
+
+  // ============================================================ /einsatzbereiche/parkhaus-tiefgarage/
+  {
+    slug: 'parkhaus-tiefgarage',
+    href: '/einsatzbereiche/parkhaus-tiefgarage/',
+    title: 'Parkhaus & Tiefgarage — OS-11a / OS-11b Beschichtung nach Rili-SIB',
+    shortTitle: 'Parkhaus & Tiefgarage',
+    metaTitle: 'Parkhausbeschichtung OS-11a OS-11b Bocholt | IBS Schmäing',
+    metaDescription:
+      'Parkhaus- und Tiefgaragen-Beschichtung mit Spezialisierung auf OS-11a und OS-11b nach DAfStb-Richtlinie Instandhaltung 2020 / Rili-SIB. Rissüberbrückend, frostfest, dauerhaft.',
+    hero: {
+      eyebrow: 'Einsatzbereich · Parkhaus',
+      headline: 'Parkhaus und Tiefgarage: OS-11a und OS-11b sind unser Fokus.',
+      sub: 'Rissüberbrückende Beschichtungen für Parkdecks nach Rili-SIB / DAfStb-Richtlinie Instandhaltung 2020. OS-11a für Zwischendecks, OS-11b für freibewitterte Decks. Mit Schnellsystem-Optionen für laufende Parkhäuser.',
+      bullets: [
+        'OS-11a für Zwischendecks',
+        'OS-11b für freibewitterte Decks',
+        'Schnellbau-Sanierung mit PMMA',
+      ],
+    },
+    intro:
+      'Parkdecks und Tiefgaragen erleben dynamische Rissbelastung durch Verkehr, Tausalz-Eintrag, Frost-Tau-Wechsel und Bremsbelagstaub. Die DAfStb-Richtlinie Instandhaltung 2020 (vormals Rili-SIB) regelt mit Oberflächenschutz­systemen (OS) die Anforderungen. IBS realisiert vor allem OS-11a (Zwischen­decks, dynamisch rissüberbrückend, dünnere Verschleißschicht) und OS-11b (freibewitterte Top-Decks mit höherer Verschleiß­belastung).',
+    suitableFor: [
+      'Parkhaus-Topdecks (freibewittert) — OS-11b',
+      'Parkhaus-Zwischen­decks — OS-11a',
+      'Tiefgaragen-Bodenplatten',
+      'Auffahrtsrampen und Wendel',
+      'Behindertenstellplätze und Sonderzonen',
+      'Bestands-Sanierung von Parkbauten',
+    ],
+    problems: [
+      { title: 'Tausalz greift Stahl an', text: 'Chloride aus Streusalz dringen durch undichte Beschichtung in den Bewehrungsstahl — Korrosion und Abplatzungen folgen.' },
+      { title: 'Risse im Beton arbeiten dynamisch', text: 'Fahrzeug-Verkehr erzeugt mikroskopische Risse, die sich öffnen und schließen — starre Beschichtungen reißen mit.' },
+      { title: 'Frost-Tau-Wechsel', text: 'Top-Decks erleben Dutzende Frost-Tau-Zyklen pro Jahr — nicht-frostfeste Systeme zerlegen sich.' },
+      { title: 'Reifenabrieb und Bremsbelagstaub', text: 'Verkehrs­last erzeugt Abrieb, der zur dauerhaften Verschmutzung wird.' },
+    ],
+    solution: {
+      title: 'OS-11a und OS-11b nach Bauteil-Position',
+      text: 'Die Wahl OS-11a vs. OS-11b hängt vom Bauteil ab. Wir bewerten Bauteil-Lage, Belastung und Wartungs­anforderung und schlagen den passenden Aufbau vor. Bei Schnellbau-Bedarf setzen wir PMMA-basierte Systeme ein.',
+      bullets: [
+        'OS-11a: 2-Schicht-System mit dynamischer Rissüberbrückung — typisch Zwischendeck',
+        'OS-11b: Erhöhte Verschleißschicht + Rissüberbrückung — typisch Top-Deck freibewittert',
+        'OS-8: starre Beschichtung für unbelastete Tiefgaragen-Innen ohne Risserwartung',
+        'Hohlkehlen, Aufkantungen, Bewegungsfugen sauber',
+        'Markierungen für Verkehrsleitung',
+      ],
+    },
+    process: [
+      { title: '01 · Bestandsaufnahme', text: 'Bauteil-Lage, Beton-Zustand, Risse, Karbonatisierungs-Tiefe, Bewehrungs-Beurteilung.' },
+      { title: '02 · System-Empfehlung', text: 'OS-Klasse nach Bauteil — schriftlich, mit Material, Schichten und Termin.' },
+      { title: '03 · Beton-Reparatur', text: 'Risse öffnen, Hohlstellen ausbauen, Bewehrung freilegen wo nötig, Reaktionsharz-Mörtel.' },
+      { title: '04 · Abdichtung', text: 'Bei OS-11: rissüberbrückende Grundierung und Membran-Schicht.' },
+      { title: '05 · Verschleißschicht', text: 'Quarzeinstreu und Versiegelung — Rutsch­hemmung mindestens R11.' },
+      { title: '06 · Markierung', text: 'Verkehrsleit-Linien, Stellplatz-Markierungen, Sperrflächen.' },
+    ],
+    benefits: [
+      'Schutz der Bewehrung vor Chloriden',
+      'Rissüberbrückend dynamisch (OS-11)',
+      'Frostfest auf Top-Decks',
+      'Wartung dokumentiert',
+      'Erwartete Nutzungs­dauer 10–15 Jahre bei OS-11',
+      'Mit Schnellbau-PMMA auch im laufenden Betrieb sanierbar',
+    ],
+    materials: [
+      { title: 'Remmers Parkhaus-System', text: 'OS-11a / OS-11b mit Rili-SIB-Zulassung — schulungs­zertifiziert verarbeitet.' },
+      { title: 'KLB Parkhaus-Aufbau', text: 'Rissüberbrückende Systeme mit hoher mechanischer Resistenz.' },
+      { title: 'PMMA-Schnellbau', text: 'Für Sanierung im laufenden Betrieb — nach Stunden wieder befahrbar.' },
+    ],
+    industries: [
+      'Parkhaus-Betreiber',
+      'WEG- und Hausverwaltungen mit Tiefgarage',
+      'Kommunen (öffentliche Parkbauten)',
+      'Einzelhandel mit Park-Anlage',
+      'Hotellerie mit Tiefgarage',
+    ],
+    faqs: [
+      { q: 'Was ist der Unterschied zwischen OS-11a und OS-11b?',
+        a: 'OS-11a ist ein 2-schichtiges, rissüberbrückend-dynamisches System mit dünnerer Verschleißlage — typisch für Zwischendecks (PKW-Verkehr, keine direkte Bewitterung). OS-11b hat eine höhere Verschleiß­schicht und ist für freibewitterte Top-Decks ausgelegt (UV, Frost-Tau, höhere Abrieb­belastung). Beide haben dynamische Rissüberbrückung.' },
+      { q: 'Wann reicht OS-8?',
+        a: 'OS-8 ist eine starre Beschichtung ohne dynamische Rissüberbrückung — geeignet für Tiefgaragen-Innenflächen ohne Risserwartung (z. B. monolithische Beton-Bodenplatten). Auf Top-Decks oder Zwischendecks mit Verkehrslast ist OS-8 in der Regel nicht ausreichend.' },
+      { q: 'Wie lange hält eine OS-11-Beschichtung?',
+        a: 'Bei sachkundiger Verarbeitung und regelmäßiger Wartung 10–15 Jahre — abhängig von Verkehr, Tausalz-Belastung und Wartungs-Intervall. Top-Decks (OS-11b) sind durch UV stärker beansprucht als Zwischendecks (OS-11a).' },
+      { q: 'Können Sie das Parkhaus offen lassen?',
+        a: 'Mit PMMA-Schnellbau-Systemen ja, zonenweise. Klassisches OS-11 braucht ca. 48–72 h Aushärtung pro Schicht — dann ist die Zone wieder befahrbar.' },
+      { q: 'Was kostet eine Parkhaus-Beschichtung?',
+        a: 'Marktüblich 2026 zwischen 60 und 180 €/m² nach OS-Klasse und Verkehrslast. Genauer Preis nach Bestands­diagnose und Aufmaß.' },
+    ],
+    keywords: [
+      'parkhaus bodenbeschichtung', 'bodenbeschichtung parkhaus', 'bodenbeschichtung tiefgarage', 'tiefgarage bodenbeschichtung', 'os 11a', 'os 11b', 'os11a parkhaus', 'os11b parkdeck', 'parkdeck beschichtung', 'rili sib parkhaus', 'parkhausbeschichtung os 11', 'parkhausbeschichtung os 8',
+    ],
+    image: '/images/scenes/parkhaus-tiefgarage-hero.jpg',
+    thumbnail: '/images/scenes/parkhaus-tiefgarage-hero.jpg',
+  },
+
+  // ============================================================ /einsatzbereiche/lebensmittel-pharma/
+  {
+    slug: 'lebensmittel-pharma',
+    href: '/einsatzbereiche/lebensmittel-pharma/',
+    title: 'Lebensmittel & Pharma — hygienische Bodenbeschichtung',
+    shortTitle: 'Lebensmittel & Pharma',
+    metaTitle: 'Lebensmittel Pharma Bodenbeschichtung Bocholt | IBS',
+    metaDescription:
+      'Bodenbeschichtung für Lebensmittel-Produktion und Pharma: fugenlos, hygienisch, chemikalien­beständig, rutschhemmend R12/R13. Konform mit EU 852/2004, IFS und HACCP-Prinzipien.',
+    hero: {
+      eyebrow: 'Einsatzbereich · Hygiene',
+      headline: 'Lebensmittel- und Pharma-Böden mit Hygiene-Anspruch.',
+      sub: 'Fugenlose Beschichtungen für Großküchen, Bäckereien, Metzgereien, Brauereien und Pharma-Produktion. Konform mit EU 852/2004, IFS Food und HACCP. Mit Rutsch­hemmung R12/R13 und hygiene­freundlichen Hohlkehlen.',
+      bullets: [
+        'EU 852/2004 · IFS · HACCP',
+        'Rutsch­hemmung R12/R13',
+        'Hohlkehlen für hygienische Reinigung',
+      ],
+    },
+    intro:
+      'Lebensmittel- und Pharma-Böden müssen hygienische Mindest­anforderungen erfüllen: fugenlos, dicht, leicht zu reinigen und zu desinfizieren, nicht-toxisch, abriebfest. EU-Verordnung 852/2004 (Anhang II) und private Standards wie IFS Food, BRCGS oder GMP regeln das. Wir verarbeiten Beschichtungs­systeme, die vom Hersteller (Remmers, KLB) für den Lebensmittel­bereich freigegeben sind.',
+    suitableFor: [
+      'Großküchen und Gastronomie',
+      'Metzgereien und Fleisch­verarbeitung',
+      'Bäckereien und Konditoreien',
+      'Brauereien und Getränke­produktion',
+      'Molkereien und Milchverarbeitung',
+      'Pharma-Produktion (Reinraum oder GMP-Bereich)',
+    ],
+    problems: [
+      { title: 'Fugen sammeln Bakterien', text: 'Fliesen-Fugen sind Hygiene-Falle — Bakterien siedeln sich in den Fugen, Reinigung erreicht sie nicht.' },
+      { title: 'Reinigungsmittel greifen Beton an', text: 'Lauge, Säure, Heißdampf — täglicher Reinigungs­zyklus zerstört unbeschichteten Beton.' },
+      { title: 'Rutschgefahr bei Fett/Öl', text: 'Schlachthof, Backstube, Großküche — hier braucht es R12 oder R13 statt R10.' },
+      { title: 'Audit-Verstoß', text: 'IFS- und BRCGS-Audit listet Bodenmängel als Major-/Critical-Findings. Audit-Verlust = Umsatz-Risiko.' },
+    ],
+    solution: {
+      title: 'Hygiene-Aufbau aus Lebensmittel-zugelassenen Systemen',
+      text: 'Wir verarbeiten Beschichtungen, die für Lebensmittel-Kontakt-freigegeben sind (vom Hersteller dokumentiert). Aufbau mit Hohlkehlen an allen Wand­anschlüssen, Rutsch­hemmung nach Tätigkeit, Reinigungs­freundlichkeit nach IFS-Standard.',
+      bullets: [
+        'Lebensmittel-freigegebene Systeme (Hersteller-Dokumentation)',
+        'Hohlkehlen mit 4 cm Radius an allen Wand­anschlüssen',
+        'Rutsch­hemmung R12 oder R13 nach DGUV-Vorgabe',
+        'Heißdampf-resistente Materialien für Reinigung',
+        'Säurefest für Lauge- und Säure-Reinigung',
+      ],
+    },
+    process: [
+      { title: '01 · Hygiene-Analyse', text: 'Welche Stoffe, welche Reinigungs­zyklen, welcher Standard (IFS / BRCGS / GMP)?' },
+      { title: '02 · System-Wahl', text: 'Lebensmittel-zugelassene Systeme nach Belastungs­profil — schriftlich.' },
+      { title: '03 · Untergrund­vorbereitung', text: 'Beton sandstrahlen, Reparatur, Grundierung — staubarm.' },
+      { title: '04 · Beschichtung', text: 'Schichten + Versiegelung + Hohlkehlen-Detail.' },
+      { title: '05 · Übergabe', text: 'Dokumentation für IFS/BRCGS-Audit, Pflege­anleitung.' },
+    ],
+    benefits: [
+      'Fugenlos und IFS-konform',
+      'Säure- und Heißdampf-beständig',
+      'R12/R13 nach DGUV-Vorgabe',
+      'Reinigungs­zeit verkürzt',
+      'Audit-tauglich dokumentiert',
+      'Lebens­dauer 15–25 Jahre bei sachgerechter Pflege',
+    ],
+    materials: [
+      { title: 'Remmers Lebensmittel-System', text: 'Beschichtungs­systeme mit Lebensmittel-Freigabe durch Hersteller.' },
+      { title: 'KLB Hygiene-Aufbau', text: 'Reaktionsharz-Beschichtungen für Pharma und Lebensmittel.' },
+      { title: 'Hohlkehlen-Detail', text: 'Aufgehende Reaktionsharz-Hohlkehlen für hygienische Wand­anschlüsse.' },
+    ],
+    industries: [
+      'Bäckereien und Konditoreien',
+      'Metzgereien und Fleisch­verarbeitung',
+      'Brauereien und Getränke­herstellung',
+      'Molkereien',
+      'Pharma-Produktion',
+      'Großküchen und Gemeinschafts­verpflegung',
+    ],
+    faqs: [
+      { q: 'Sind die Beschichtungen „lebensmittelecht"?',
+        a: 'Der Begriff „lebensmittelecht" bezeichnet Material im direkten Lebensmittel­kontakt. Industrieböden sind nicht im direkten Kontakt, sondern müssen die Hygiene-Anforderungen nach EU 852/2004 erfüllen: fugenlos, wasserundurchlässig, abriebfest, nichttoxisch, leicht zu reinigen. Wir verarbeiten Systeme, die vom Hersteller dafür freigegeben sind.' },
+      { q: 'Welche Rutsch­hemmung in der Großküche?',
+        a: 'Nach DGUV-Regel 108-003 typisch R11 oder R12, je nach Wasser- und Fett­anfall. Heißbereiche (Frittier-Zone) eher R12 mit V6/V8 Verdrängungs­raum.' },
+      { q: 'Können wir während der Beschichtung produzieren?',
+        a: 'Zonenweise ja — mit PMMA-Schnellsystemen ist eine Zone nach Stunden wieder belastbar. Klassische EP-Systeme brauchen 24–72 h Aushärtung. Beratung im Vor-Ort-Termin.' },
+      { q: 'Erfüllt das System die IFS-/BRCGS-Anforderungen?',
+        a: 'Sachkundig ausgeführte Reaktionsharz-Beschichtungen mit Hohlkehlen, korrektem Aufbau und Hersteller-Freigabe sind Standard im IFS-/BRCGS-konformen Lebensmittel­bereich. Audit-Dokumentation liefern wir mit.' },
+      { q: 'Was kostet ein Lebensmittel-Boden?',
+        a: 'Marktüblich 2026 zwischen 80 und 180 €/m² — abhängig von R-Klasse, Hohlkehlen-Aufwand und Sondersystem. Festpreis nach Aufmaß.' },
+    ],
+    keywords: [
+      'bodenbeschichtung lebensmittelindustrie', 'bodenbeschichtung lebensmittel', 'bodenbeschichtung lebensmittelbereich', 'bodenbeschichtung gastronomie', 'bodenbeschichtung metzgerei', 'bodenbeschichtung großküche', 'industrieboden lebensmittelbereich', 'bäckerei boden', 'pharma boden', 'hygiene bodenbeschichtung',
+    ],
+    image: '/images/scenes/lebensmittel-pharma-hero.jpg',
+    thumbnail: '/images/scenes/lebensmittel-pharma-hero.jpg',
+  },
+
+  // ============================================================ /einsatzbereiche/whg-auffangraeume/
+  {
+    slug: 'whg-auffangraeume',
+    href: '/einsatzbereiche/whg-auffangraeume/',
+    title: 'WHG-Auffangräume — flüssigkeitsdichte Beschichtung sachkundig',
+    shortTitle: 'WHG-Auffangräume',
+    metaTitle: 'WHG Auffangraum Beschichtung · §62 AwSV | IBS',
+    metaDescription:
+      'Auffangraum-Beschichtung nach §62 AwSV / §63 WHG: DIBt-zugelassene Systeme, sachkundige Verarbeitung mit Sachkundenachweis, Hohlkehlen und Dichtheits­prüfung. Bocholt · NRW.',
+    hero: {
+      eyebrow: 'Einsatzbereich · WHG · AwSV',
+      headline: 'Auffangräume nach §62 AwSV — sachkundig beschichtet.',
+      sub: 'Flüssigkeits­dichte Beschichtung nach §62 AwSV / §63 WHG: DIBt-zugelassene Systeme, Hohlkehlen, Dichtheits­prüfung. Verarbeitung mit gültigem Sachkundenachweis.',
+      bullets: [
+        'DIBt-Zulassung pro Medium',
+        'Sachkundenachweis nach AwSV',
+        'Dichtheits­prüfung dokumentiert',
+      ],
+    },
+    intro:
+      'WHG-Auffangräume schützen Boden und Grundwasser vor wassergefährdenden Stoffen. §62 AwSV (Anlagen­verordnung wassergefährdende Stoffe, gültig seit 2017) und §63 WHG verlangen flüssigkeits­dichte Aufbauten mit DIBt-zugelassenen Systemen. Wir verarbeiten diese Systeme mit gültigem Sachkunde­nachweis — Hohlkehlen, Anschlüsse, Dichtheits­prüfung inklusive.',
+    suitableFor: [
+      'Auffangräume für Mineralöl, Heizöl, Schmierstoffe',
+      'Lager für Lacke, Lösemittel, Beizen',
+      'Säuren- und Laugen­lager',
+      'Tank- und Umschlag­flächen',
+      'Werkstätten mit Gefahrstoff-Lagerung',
+      'Galvanik und Oberflächentechnik',
+    ],
+    problems: [
+      { title: '§62-Pflicht verletzt', text: 'Lagerung von wassergefährdenden Stoffen ab bestimmten Mengen verlangt flüssigkeits­dichten Auffangraum — Verstöße sind anzeige­pflichtig und kostspielig.' },
+      { title: 'Falsches System', text: 'Eine „chemikalien­beständige" Beschichtung ohne DIBt-Zulassung ist NICHT WHG-konform.' },
+      { title: 'Hohlkehlen vergessen', text: 'Aufgehende Hohlkehlen sind Voraussetzung für „flüssigkeits­dicht" — sonst ist der Auffangraum unwirksam.' },
+    ],
+    solution: {
+      title: 'System nach Medium — sachkundig verarbeitet',
+      text: 'Wir wählen das DIBt-zugelassene System nach Ihrer konkreten Lager­liste (Stoffe, WGK, Volumen). Aufbau mit Hohlkehlen an allen Wand­anschlüssen, sachkundige Verarbeitung, Dichtheits­prüfung im Anschluss.',
+      bullets: [
+        'System mit DIBt-abZ/abP/aBG passend zum Medium',
+        'Aufgehende Hohlkehlen an allen Wand­anschlüssen',
+        'Sachkundige Verarbeitung dokumentiert',
+        'Visuelle und ggf. Wasser­stand-Dichtheits­prüfung',
+        'Dokumentation für die Untere Wasserbehörde',
+      ],
+    },
+    process: [
+      { title: '01 · Stoff- und Mengen-Analyse', text: 'Welches Medium (WGK), welche Menge, welche Standdauer im Auffangraum.' },
+      { title: '02 · System-Empfehlung', text: 'Konkretes DIBt-zugelassenes System mit Aufbau-Plan.' },
+      { title: '03 · Vorbereitung', text: 'Untergrund­vorbereitung mit Kugelstrahlen oder Fräsen, Reparatur.' },
+      { title: '04 · Beschichtung', text: 'System-Aufbau mit Hohlkehlen — sachkundige Verarbeitung.' },
+      { title: '05 · Prüfung & Übergabe', text: 'Dichtheits­prüfung, Dokumentation, Pflege- und Wartungs­empfehlung.' },
+    ],
+    benefits: [
+      'Erfüllt §62 AwSV / §63 WHG',
+      'DIBt-zugelassene Systeme',
+      'Sachkundige Verarbeitung mit Nachweis',
+      'Hohlkehlen und Anschlüsse normgerecht',
+      'Dokumentation für die Behörde',
+      'Wartungs- und Inspektions­empfehlung inklusive',
+    ],
+    materials: [
+      { title: 'Remmers WHG-System', text: 'Reaktionsharz-Beschichtungen mit DIBt-Zulassung für definierte Medien.' },
+      { title: 'KLB WHG-Schutzsystem', text: 'WHG-zugelassene Systeme mit Chemie-Resistenz nach Medien­liste.' },
+    ],
+    industries: [
+      'Industrie- und Gewerbe­betriebe mit Tankanlagen',
+      'Werkstätten mit Beizen und Lacken',
+      'Druckereien und Beschichtungs­betriebe',
+      'Galvanik und Oberflächentechnik',
+      'Energie- und Wärme­versorgung (Heizöl)',
+    ],
+    faqs: [
+      { q: 'Ist IBS WHG-Fachbetrieb?',
+        a: 'Nein. IBS Schmäing hat keine Fachbetriebs-Zertifizierung nach §62 AwSV. Wir verfügen aber über einen gültigen Sachkunde­nachweis und verarbeiten DIBt-zugelassene Systeme sachkundig. Für die Errichtung/Instandhaltung der Gesamt­anlage kann zusätzlich ein zertifizierter Fachbetrieb erforderlich sein.' },
+      { q: 'Was bedeutet DIBt-Zulassung?',
+        a: 'Das Deutsche Institut für Bautechnik (DIBt) erteilt allgemeine bauaufsichtliche Zulassungen (abZ) für Beschichtungs­systeme zur Verwendung in WHG-Anlagen. Jede Zulassung listet die zulässigen Medien. Nur zugelassene Systeme sind WHG-konform.' },
+      { q: 'Welches System für welches Medium?',
+        a: 'Mineralöl, Säuren, Laugen, Lösemittel — jedes Medium hat andere Anforderungen. Wir wählen das System nach Ihrer konkreten Lager­liste. Universal-Systeme gibt es nicht.' },
+      { q: 'Wie oft wird der Auffangraum geprüft?',
+        a: 'Üblich sind regelmäßige Sicht- und Dichtheits­prüfungen sowie Sachverständigen­prüfungen nach AwSV §46 (oft alle 5 Jahre) — abhängig von Anlagentyp und Behörden­auflage.' },
+      { q: 'Brauche ich eine Anzeige bei der Behörde?',
+        a: 'Ab bestimmten Volumen ja. Die Untere Wasserbehörde (UWB) ist zuständig. Wir liefern die technische Dokumentation; die Anzeige­pflicht klärt der Betreiber mit der UWB.' },
+    ],
+    keywords: [
+      'whg auffangraum', 'whg beschichtung auffangraum', 'awsv beschichtung', 'bodenbeschichtung nach whg 19', 'bodenbeschichtung whg', 'flüssigkeitsdichte beschichtung', 'dibt zugelassene beschichtung', 'sachkundenachweis whg',
+    ],
+    image: '/images/scenes/whg-auffangraeume-hero.jpg',
+    thumbnail: '/images/scenes/whg-auffangraeume-hero.jpg',
+  },
+
+  // ============================================================ /einsatzbereiche/showroom-praxis/
+  {
+    slug: 'showroom-praxis',
+    href: '/einsatzbereiche/showroom-praxis/',
+    title: 'Showroom & Praxis — repräsentative Bodensysteme',
+    shortTitle: 'Showroom & Praxis',
+    metaTitle: 'Showroom Praxis Bodenbeschichtung · Designboden | IBS',
+    metaDescription:
+      'Hochwertige Bodensysteme für Showroom, Verkaufsräume, Arztpraxen und Kanzleien: Designböden in Betonoptik, Steinteppich, edle EP-Beschichtungen. Hygienisch und repräsentativ.',
+    hero: {
+      eyebrow: 'Einsatzbereich · Repräsentation',
+      headline: 'Böden, die zur Marke passen — robust trifft repräsentativ.',
+      sub: 'Designböden in Betonoptik, Steinteppich oder edle EP-Systeme für Showroom, Praxis, Kanzlei, Hotellerie und Wohnen mit Anspruch. Hygienisch, fugenlos, in jeder Farbe.',
+      bullets: [
+        'Designboden / Betonoptik',
+        'Steinteppich Innen',
+        'Hygienisch & fugenlos',
+      ],
+    },
+    intro:
+      'In Räumen mit Außen­wirkung ist der Boden Teil der Marke. Wir realisieren hochwertige Bodensysteme — fugenlose Spachtelböden in Betonoptik, Designharze, Steinteppich oder edle Reaktionsharz-Beschichtungen — die robust und repräsentativ zugleich sind. Geeignet für Showroom, Praxis, Hotellerie und anspruchsvolles Wohnen.',
+    suitableFor: [
+      'Autohäuser und Showrooms',
+      'Verkaufs- und Ausstellungs­flächen',
+      'Arztpraxen und Kanzleien',
+      'Hotellerie und Gastronomie',
+      'Hochwertige Wohnungen und Lofts',
+      'Galerien und Museen',
+    ],
+    problems: [
+      { title: 'Fliesen­fugen wirken unruhig', text: 'In repräsentativen Räumen stören Fugen die Wirkung — fugenlose Böden schaffen Ruhe.' },
+      { title: 'Hygiene vs. Optik', text: 'Praxen brauchen hygienische Böden, die nicht nach Klinik aussehen.' },
+      { title: 'Pflege­aufwand', text: 'Naturstein und Parkett sind aufwändig in der Pflege — Reaktionsharz nicht.' },
+    ],
+    solution: {
+      title: 'Premium-System nach Anspruch',
+      text: 'Wir bieten drei Premium-Wege: Spachtelboden in Betonoptik (mineralisch oder Reaktionsharz), Steinteppich aus Marmorkiesel (innen verdichtet), oder edle EP-Beschichtungen mit Farbeffekten. Pflege­leicht und über 15 Jahre haltbar.',
+      bullets: [
+        'Designboden Betonoptik (fugenlos, hand­gespachtelt)',
+        'Steinteppich aus Marmorkiesel (Premium-Optik)',
+        'EP-Beschichtung mit Color-Chips oder Marmor­effekt',
+        'Hygienisch in Praxen (fugenlos, ohne Sockel-Spalt)',
+        'Schall- und Trittschall-dämmend (Steinteppich)',
+      ],
+    },
+    process: [
+      { title: '01 · Beratung', text: 'Look, Belastung, Hygiene, Pflege — wir bringen Muster vor Ort.' },
+      { title: '02 · Konzept', text: 'System, Farbe, Glanz, Versiegelung — mit Festpreis.' },
+      { title: '03 · Vorbereitung', text: 'Untergrund­vorbereitung und Reparatur.' },
+      { title: '04 · Beschichtung', text: 'Hand­arbeit beim Spachtelboden — jeder Boden ein Unikat.' },
+      { title: '05 · Versiegelung', text: 'Glanz­stufe und Rutsch­hemmung nach Wunsch.' },
+    ],
+    benefits: [
+      'Repräsentative, fugenlose Oberfläche',
+      'Pflegeleicht — feucht wischen reicht',
+      'Hygienisch und audit-tauglich',
+      'In jeder Farbe und Glanz­stufe lieferbar',
+      'Trittschall­dämpfend (Steinteppich)',
+      'Lebens­dauer 15–25 Jahre',
+    ],
+    materials: [
+      { title: 'Spachtelboden Beton­optik', text: 'Mineralisch oder Reaktionsharz — hand­gespachtelt, jeder Boden ein Unikat.' },
+      { title: 'Steinteppich innen', text: 'Marmorkiesel-Bodenbelag in transparentem Harz, verdichtet für leichtes Reinigen.' },
+      { title: 'EP-Designboden', text: 'Reaktionsharz-Beschichtung mit Color-Chips, Marmor­effekt oder Quarz.' },
+    ],
+    industries: [
+      'Autohäuser und Premium-Showrooms',
+      'Arztpraxen und medizinische Einrichtungen',
+      'Kanzleien und Beratungs­büros',
+      'Hotellerie und Premium-Gastronomie',
+      'Architektur und Innenausbau',
+      'Hochwertige Wohnungen',
+    ],
+    faqs: [
+      { q: 'Welches System für eine Arztpraxis?',
+        a: 'Fugenlose, leicht zu desinfizierende Beschichtung — z. B. EP-Verlaufs­beschichtung 2 mm mit pH-neutral reinigbarer Versiegelung. Hohlkehlen an Wand­anschlüssen helfen bei der Reinigung. Steinteppich ist Wartezimmer-tauglich, in Behandlungs­räumen meist nicht (Hygiene-Pflicht).' },
+      { q: 'Kann ich den Boden bei der Möbel­anlieferung beschädigen?',
+        a: 'Reaktionsharz-Beschichtungen sind robust, aber nicht unzerstörbar. Wir liefern Schutz­hinweise und sind später vor Ort, wenn etwas auszubessern ist.' },
+      { q: 'Wie pflege ich einen Designboden?',
+        a: 'Trocken kehren oder saugen, gelegentlich feucht wischen mit pH-neutralem Reiniger. Keine aggressiven Reinigungs­mittel.' },
+      { q: 'Wirkt jeder Designboden gleich?',
+        a: 'Nein — Spachtelböden sind handwerklich erstellt, jeder Boden hat seine eigene Wolkung und Charakter. Wir zeigen Muster vor Ort.' },
+      { q: 'Was kostet ein Designboden?',
+        a: 'Marktüblich 2026 zwischen 100 und 200 €/m² — abhängig von Aufbau, Glanz und Sondereffekt. Festpreis nach Aufmaß.' },
+    ],
+    keywords: [
+      'bodenbeschichtung wohnraum', 'bodenbeschichtung büro', 'industrieboden für zuhause', 'industrieboden wohnbereich', 'industrieboden im wohnbereich', 'designboden showroom', 'praxis bodenbeschichtung', 'arztpraxis boden', 'autohaus boden', 'hotel boden',
+    ],
+    image: '/images/scenes/showroom-praxis-hero.jpg',
+    thumbnail: '/images/scenes/showroom-praxis-hero.jpg',
+  },
+
+  // ============================================================ /einsatzbereiche/garage-keller/
+  {
+    slug: 'garage-keller',
+    href: '/einsatzbereiche/garage-keller/',
+    title: 'Garage & Keller — privat & WEG',
+    shortTitle: 'Garage & Keller',
+    metaTitle: 'Garage Keller Bodenbeschichtung · Privat & WEG | IBS',
+    metaDescription:
+      'Bodenbeschichtung für Privat-Garagen, Kellerräume und WEG-Tiefgaragen: 2K-Epoxidharz, Steinteppich oder diffusionsoffene Systeme. Aus Bocholt für den Niederrhein und NRW.',
+    hero: {
+      eyebrow: 'Einsatzbereich · Privat',
+      headline: 'Garage & Keller — vom Boden bis zur Bordüre.',
+      sub: 'Privat- und WEG-Bereiche: Garage, Kellerräume, Tiefgarage und Hobbykeller. Wir wählen das System nach Untergrund, Restfeuchte und Nutzung — vom 2K-EP bis zum Premium-Steinteppich.',
+      bullets: [
+        'Privatgarage oder WEG-Tiefgarage',
+        'Diffusionsoffen im feuchten Keller',
+        'In der Regel an einem Tag fertig',
+      ],
+    },
+    intro:
+      'Für Privat-Eigentümer und Hausverwaltungen sind Garage und Keller die häufigsten Beschichtungs-Aufträge. Die Anforderungen unterscheiden sich grundlegend: Garage = ölbeständig, salzfest, in einem Tag fertig. Keller = oft Restfeuchte, diffusionsoffenes System nötig. Wir messen, beraten und beschichten passend.',
+    suitableFor: [
+      'Privat-Garagen (Einzel-, Doppel-, Dreifach-)',
+      'Carports und Vorflächen',
+      'WEG-Tiefgaragen',
+      'Wohn- und Hobbykeller',
+      'Heizungs- und Hausanschluss­räume',
+      'Vorratskeller',
+    ],
+    problems: [
+      { title: 'Garage: Ölflecken und Salzschäden', text: 'Unbeschichteter Beton saugt alles auf — Optik leidet, Substanz wird zerstört.' },
+      { title: 'Keller: Restfeuchte', text: 'Klassische dichte Beschichtungen platzen ab — diffusionsoffene Systeme sind hier Pflicht.' },
+      { title: 'WEG-Tiefgarage: Verkehrslast', text: 'Mehr Belastung als Privat — entsprechend stärkerer Aufbau.' },
+    ],
+    solution: {
+      title: 'Pro Bereich das passende System',
+      text: 'Garage: 2K-EP in 0,8–1,5 mm mit R10 — fertig in einem Tag. Keller mit Restfeuchte: diffusionsoffenes mineralisches System. WEG-Tiefgarage: höhere Schicht­dicke, ggf. PU. Wir messen den Untergrund vor jeder Empfehlung.',
+      bullets: [
+        '2K-Epoxidharz für Privatgarage',
+        'Diffusionsoffenes System bei Restfeuchte',
+        'PU oder Mörtelbelag bei WEG-Tiefgarage',
+        'Steinteppich als Premium-Variante',
+        'CM-Messung vor Vergabe im Keller',
+      ],
+    },
+    process: [
+      { title: '01 · Vor-Ort-Termin', text: 'Kostenfrei. Wir messen CM-Restfeuchte und beraten zu System und Farbe.' },
+      { title: '02 · Konzept', text: 'Schriftliches Angebot mit Festpreis, Schicht­aufbau und Termin.' },
+      { title: '03 · Vorbereitung', text: 'Schleifen oder Strahlen, Reparatur, Grundierung.' },
+      { title: '04 · Beschichtung', text: 'Schichten in Wunschfarbe — bei Privat­garage oft an einem Tag fertig.' },
+      { title: '05 · Übergabe', text: 'Begehbar nach 12–24 h, voll belastbar nach 3 Tagen.' },
+    ],
+    benefits: [
+      'Garage: ölbeständig, salzfest, in einem Tag fertig',
+      'Keller: diffusionsoffen wo nötig',
+      'In jeder RAL-Farbe lieferbar',
+      'Steinteppich als Premium-Alternative',
+      'Lebens­dauer 15+ Jahre',
+    ],
+    materials: [
+      { title: 'Remmers Garagenboden­system', text: '2K-Epoxidharz für Privatgarage, Schicht­dicke 0,5–1,5 mm.' },
+      { title: 'Diffusionsoffenes Kellerboden­system', text: 'Mineralisch oder Reaktionsharz mit niedrigem sd-Wert für feuchten Untergrund.' },
+      { title: 'Steinteppich (Marmorkiesel)', text: 'Premium-Variante für Wohn­keller, Hobbyraum oder Vorbereich.' },
+    ],
+    industries: [
+      'Privat-Eigentümer',
+      'Hausverwaltungen / WEG',
+      'Architekten und Bauträger',
+    ],
+    faqs: [
+      { q: 'Garage oder Keller — was ist der größte Unterschied?',
+        a: 'Garage: kein Feuchte-Problem (Bodenplatte ist meistens trocken), aber Öl- und Salz­belastung. Keller: Restfeuchte ist die Hauptfrage — bei Werten über 4 % CM brauchen wir ein diffusionsoffenes System.' },
+      { q: 'Was kostet eine Garagen­beschichtung?',
+        a: 'Privatgarage marktüblich 2026: 60–120 €/m² inkl. Material, Untergrund­vorbereitung und Verarbeitung. Tiefgarage höher wegen Verkehrslast und Markierungen.' },
+      { q: 'Funktioniert das auf alten Fliesen?',
+        a: 'In den meisten Fällen ja. Voraussetzung: Fliesen sitzen fest, sind tragfähig und nicht durchfeuchtet. Wir prüfen im Vor-Ort-Termin und wählen die passende Haftungs­grundierung.' },
+      { q: 'Wie lange dauern Arbeiten im Keller?',
+        a: 'Standard-Wohnkeller (ca. 30 m²) in 2 Arbeitstagen. Begehbar nach 12–24 h, voll belastbar nach 3 Tagen.' },
+      { q: 'Pflege?',
+        a: 'Trocken kehren oder saugen, gelegentlich feucht wischen mit pH-neutralem Reiniger. Ölfilme einfach abwischen.' },
+    ],
+    keywords: [
+      'bodenbeschichtung garage', 'bodenbeschichtung keller', 'garage bodenbeschichtung', 'keller bodenbeschichtung', 'tiefgarage weg', 'kellerboden beschichten', 'garagenboden beschichten', 'bodenbeschichtung kellerräume',
+    ],
+    image: '/images/scenes/garage-keller-hero.jpg',
+    thumbnail: '/images/scenes/garage-keller-hero.jpg',
+  },
+]
+
+export const EINSATZBEREICH_BY_SLUG: Record<string, Service> = EINSATZBEREICH_PAGES.reduce(
+  (acc, e) => ({ ...acc, [e.slug]: e }),
+  {} as Record<string, Service>,
+)

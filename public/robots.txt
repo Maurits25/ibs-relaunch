@@ -1,0 +1,117 @@
+# robots.txt – IBS Industriebodensanierung Schmäing
+# Stand: 2026 — verifizierte AI-Bot-Liste mit offiziellen Doku-Belegen
+# Strategie: ALLEN seriösen Crawlern Zugriff geben (klassische Suche + AI)
+#            damit IBS in Google AI Overviews, ChatGPT Search, Claude.ai,
+#            Perplexity, Bing Copilot, Apple Intelligence usw. zitiert wird.
+
+# === Klassische Suchmaschinen ===
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+# === OpenAI ===
+# https://platform.openai.com/docs/bots
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# === Anthropic ===
+# https://support.anthropic.com/en/articles/8896518
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# === Perplexity ===
+# https://docs.perplexity.ai/guides/bots
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# === Google AI (Gemini, Search Generative Experience) ===
+# https://developers.google.com/search/docs/crawling-indexing/google-extended
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# === Apple Intelligence ===
+# https://support.apple.com/en-us/119829
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# === Meta AI ===
+# https://developers.facebook.com/docs/sharing/bot
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# === Microsoft Copilot indirekt via Bingbot abgedeckt ===
+
+# === Amazon AI ===
+User-agent: Amazonbot
+Allow: /
+
+# === Cohere ===
+User-agent: cohere-ai
+Allow: /
+
+# === Diffbot (Knowledge Graph für B2B-Verzeichnisse) ===
+User-agent: Diffbot
+Allow: /
+
+# === DuckDuckGo AI ===
+User-agent: DuckAssistBot
+Allow: /
+
+# === You.com ===
+User-agent: YouBot
+Allow: /
+
+# === ByteDance / Doubao ===
+User-agent: Bytespider
+Allow: /
+
+# === Default (alle anderen) ===
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# === Sitemap ===
+Sitemap: https://ibs-industriebodensanierung.de/sitemap.xml
+
+# === Host (canonical) ===
+Host: https://ibs-industriebodensanierung.de

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" role="img" aria-label="KLB Kötztal">
+  <title>KLB Kötztal</title>
+  <g>
+    <text x="0" y="38" font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+          font-weight="900" font-size="40" letter-spacing="3"
+          fill="#003C7E">KLB</text>
+    <text x="0" y="56" font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+          font-weight="600" font-size="12" letter-spacing="4"
+          fill="#003C7E">KÖTZTAL</text>
+  </g>
+</svg>

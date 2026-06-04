@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" role="img" aria-label="Honeywell">
+  <title>Honeywell</title>
+  <g fill="#EE2722">
+    <circle cx="22" cy="30" r="14"/>
+    <circle cx="22" cy="30" r="6" fill="white"/>
+  </g>
+  <text x="46" y="42" font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+        font-weight="800" font-size="32" letter-spacing="-1.2"
+        fill="#EE2722">Honeywell</text>
+</svg>

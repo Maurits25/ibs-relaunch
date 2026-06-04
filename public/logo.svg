@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" role="img" aria-label="IBS Industriebodensanierung Schmäing">
+  <title>IBS Industriebodensanierung Schmäing</title>
+  <g fill="currentColor">
+    <!-- IBS Wordmark -->
+    <g font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="170" letter-spacing="-6">
+      <text x="0" y="148">IBS</text>
+    </g>
+
+    <!-- Punktraster rechts (5 Spalten × 5 Reihen, fade) -->
+    <g>
+      <!-- Reihe 1 (oben, kleinste Punkte) -->
+      <ellipse cx="320" cy="38"  rx="7"  ry="9"/>
+      <ellipse cx="360" cy="38"  rx="6"  ry="8"/>
+      <ellipse cx="398" cy="38"  rx="5"  ry="7"/>
+      <ellipse cx="434" cy="38"  rx="4.5" ry="6"/>
+      <ellipse cx="468" cy="38"  rx="4"  ry="5.5"/>
+      <!-- Reihe 2 -->
+      <ellipse cx="320" cy="68"  rx="8"  ry="10"/>
+      <ellipse cx="360" cy="68"  rx="7"  ry="9"/>
+      <ellipse cx="398" cy="68"  rx="6"  ry="8"/>
+      <ellipse cx="434" cy="68"  rx="5"  ry="7"/>
+      <ellipse cx="468" cy="68"  rx="4.5" ry="6"/>
+      <!-- Reihe 3 -->
+      <ellipse cx="320" cy="100" rx="9"  ry="11"/>
+      <ellipse cx="360" cy="100" rx="8"  ry="10"/>
+      <ellipse cx="398" cy="100" rx="7"  ry="9"/>
+      <ellipse cx="434" cy="100" rx="6"  ry="8"/>
+      <ellipse cx="468" cy="100" rx="5"  ry="7"/>
+      <!-- Reihe 4 -->
+      <ellipse cx="320" cy="134" rx="10" ry="12"/>
+      <ellipse cx="360" cy="134" rx="9"  ry="11"/>
+      <ellipse cx="398" cy="134" rx="8"  ry="10"/>
+      <ellipse cx="434" cy="134" rx="7"  ry="9"/>
+      <ellipse cx="468" cy="134" rx="6"  ry="8"/>
+      <!-- Reihe 5 (unten, größte Punkte) -->
+      <ellipse cx="320" cy="170" rx="11" ry="13"/>
+      <ellipse cx="360" cy="170" rx="10" ry="12"/>
+      <ellipse cx="398" cy="170" rx="9"  ry="11"/>
+      <ellipse cx="434" cy="170" rx="8"  ry="10"/>
+      <ellipse cx="468" cy="170" rx="7"  ry="9"/>
+    </g>
+
+    <!-- Untertitel -->
+    <g font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="36" letter-spacing="-0.6">
+      <text x="0" y="218">Industriebodensanierung Schmäing</text>
+    </g>
+  </g>
+</svg>

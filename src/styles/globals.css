@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font-display: 'Inter', system-ui, sans-serif;
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-white text-ibs-ink antialiased;
+    font-family: var(--font-inter);
+    font-feature-settings: 'cv11', 'ss01';
+  }
+
+  /* Verhindert ungesunde Umbrüche bei zusammengesetzten Begriffen */
+  h1, h2, h3 {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+  }
+
+  p, li {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background-color: #E87722;
+    color: white;
+  }
+
+  /* Fokuszustand für Tastatur-Navigation */
+  :focus-visible {
+    @apply outline-none ring-2 ring-ibs-accent ring-offset-2 ring-offset-white rounded-md;
+  }
+
+  /* Reduced Motion respektieren */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .container-tight {
+    @apply container max-w-6xl;
+  }
+
+  .container-wide {
+    @apply container max-w-screen-2xl;
+  }
+
+  .section {
+    @apply py-section;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 font-semibold transition-all duration-200 ease-snappy
+           focus:outline-none focus-visible:ring-2 focus-visible:ring-ibs-accent focus-visible:ring-offset-2;
+    line-height: 1.1;
+  }
+
+  .btn-primary {
+    @apply btn bg-ibs-accent text-white shadow-accent hover:bg-ibs-accentDark active:translate-y-[1px];
+  }
+
+  .btn-secondary {
+    @apply btn bg-ibs-ink text-white hover:bg-ibs-graphite active:translate-y-[1px];
+  }
+
+  .btn-ghost {
+    @apply btn bg-white/0 text-ibs-ink ring-1 ring-ibs-line hover:bg-ibs-mist;
+  }
+
+  .btn-outline-light {
+    @apply btn bg-white/0 text-white ring-1 ring-white/40 hover:bg-white/10;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-fluid-xs font-semibold uppercase tracking-[0.18em] text-ibs-accent;
+  }
+
+  .heading-1 {
+    @apply font-display font-bold tracking-tight text-fluid-5xl leading-[1.05];
+  }
+
+  .heading-2 {
+    @apply font-display font-bold tracking-tight text-fluid-4xl leading-[1.1];
+  }
+
+  .heading-3 {
+    @apply font-display font-bold tracking-tight text-fluid-2xl leading-[1.2];
+  }
+
+  .lede {
+    @apply text-fluid-lg leading-relaxed text-ibs-steel;
+  }
+
+  .card {
+    @apply rounded-2xl bg-white ring-1 ring-ibs-line shadow-soft transition-all duration-300 ease-snappy hover:shadow-card hover:-translate-y-0.5;
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-1.5 rounded-full bg-ibs-mist px-3 py-1 text-fluid-xs font-medium text-ibs-steel ring-1 ring-ibs-line;
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  /* Reveal-Animation: standardmäßig SICHTBAR (kein Content-Blocker).
+     Nur wenn JavaScript erfolgreich initialisiert hat, wird `data-js-ready="true"`
+     auf <html> gesetzt — erst dann darf der "noch nicht sichtbar"-Zustand greifen.
+     Fällt JS aus, bleibt der Content normal sichtbar. */
+  .reveal {
+    transition: opacity 0.7s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  html[data-js-ready="true"] .reveal:not(.is-visible) {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html[data-js-ready="true"] .reveal:not(.is-visible) {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .gradient-mask-b {
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent);
+    mask-image: linear-gradient(to bottom, black 60%, transparent);
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .text-pretty  { text-wrap: pretty; }
+}

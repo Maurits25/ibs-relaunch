@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" role="img" aria-label="Hörmann">
+  <title>Hörmann</title>
+  <g>
+    <rect x="0" y="36" width="240" height="8" fill="#FFD500"/>
+    <text x="0" y="32" font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+          font-weight="900" font-size="34" letter-spacing="-0.6"
+          fill="#1A1A1A">Hörmann</text>
+  </g>
+</svg>
