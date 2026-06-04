@@ -95,8 +95,8 @@ export default function HomePage() {
       </Section>
 
       {/* Hero-Bild Block — Sanierungslösungen mit System */}
-      <Section variant="ink" className="overflow-hidden">
-        <div className="absolute inset-0 -z-0">
+      <Section variant="ink" className="relative isolate overflow-hidden">
+        <div className="absolute inset-0 -z-10">
           <Image
             src="/images/projects/industrie-2.jpg"
             alt=""

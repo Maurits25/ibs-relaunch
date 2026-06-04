@@ -6,7 +6,7 @@ import { SITE } from '@/data/site'
 
 export function StickyMobileCTA() {
   return (
-    <div className="lg:hidden fixed inset-x-0 bottom-0 z-40 pointer-events-none">
+    <div className="lg:hidden fixed inset-x-0 bottom-0 z-30 pointer-events-none pb-[env(safe-area-inset-bottom)]">
       <div className="mx-3 mb-3 grid grid-cols-2 gap-2 rounded-2xl bg-ibs-ink/95 p-2 shadow-card ring-1 ring-white/10 backdrop-blur-md pointer-events-auto">
         <a
           href={`tel:${SITE.contact.phone.replace(/\s/g, '')}`}

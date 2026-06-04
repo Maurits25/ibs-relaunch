@@ -23,9 +23,38 @@ export function Header() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  // Robuster Scroll-Lock — auch für iOS Safari (overflow:hidden allein reicht dort nicht).
   useEffect(() => {
-    document.body.style.overflow = open ? 'hidden' : ''
-    return () => { document.body.style.overflow = '' }
+    const body = document.body
+    const html = document.documentElement
+    if (open) {
+      const scrollY = window.scrollY
+      body.dataset.scrollLock = String(scrollY)
+      body.style.position = 'fixed'
+      body.style.top = `-${scrollY}px`
+      body.style.left = '0'
+      body.style.right = '0'
+      body.style.overflow = 'hidden'
+      html.style.overflow = 'hidden'
+    } else {
+      const scrollY = Number(body.dataset.scrollLock ?? 0)
+      body.style.position = ''
+      body.style.top = ''
+      body.style.left = ''
+      body.style.right = ''
+      body.style.overflow = ''
+      html.style.overflow = ''
+      delete body.dataset.scrollLock
+      if (scrollY) window.scrollTo(0, scrollY)
+    }
+    return () => {
+      body.style.position = ''
+      body.style.top = ''
+      body.style.left = ''
+      body.style.right = ''
+      body.style.overflow = ''
+      html.style.overflow = ''
+    }
   }, [open])
 
   // Esc schließt offene Dropdowns
@@ -97,7 +126,7 @@ export function Header() {
                 </Link>
                 <div
                   className={cn(
-                    'absolute left-1/2 top-full -translate-x-1/2 pt-3 transition-all duration-200',
+                    'absolute left-1/2 top-full z-50 -translate-x-1/2 pt-3 transition-all duration-200',
                     openMenu === item.href ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none',
                   )}
                   role="menu"
@@ -170,10 +199,10 @@ export function Header() {
         </button>
       </div>
 
-      {/* Mobile Offcanvas */}
+      {/* Mobile Offcanvas — z-[60] über Header (z-50) UND Sticky-CTA (z-30) */}
       <div
         className={cn(
-          'fixed inset-0 z-40 lg:hidden transition-all',
+          'fixed inset-0 z-[60] lg:hidden transition-all',
           open ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-0',
         )}
         aria-hidden={!open}
@@ -186,7 +215,8 @@ export function Header() {
         />
         <aside
           className={cn(
-            'absolute right-0 top-0 h-full w-[88%] max-w-sm overflow-y-auto bg-white p-5 shadow-xl transition-transform duration-300',
+            // h-[100dvh] für iOS Safari-Viewport, overscroll-contain gegen Scroll-Bleed
+            'absolute right-0 top-0 flex h-[100dvh] w-[88%] max-w-sm flex-col overflow-y-auto overscroll-contain bg-white p-5 shadow-xl transition-transform duration-300',
             open ? 'translate-x-0' : 'translate-x-full',
           )}
         >

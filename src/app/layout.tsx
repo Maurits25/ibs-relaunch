@@ -22,7 +22,8 @@ export const viewport: Viewport = {
   themeColor: '#0E1417',
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 5,
+  // KEIN maximumScale (WCAG 2.1 AA 1.4.4 — Pinch-Zoom unbeschränkt erlauben)
+  viewportFit: 'cover',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -36,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Zum Inhalt springen
         </a>
         <Header />
-        <main id="main" className="flex-1">
+        <main id="main" className="flex-1 pb-24 lg:pb-0">
           {children}
         </main>
         <Footer />

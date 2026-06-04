@@ -11,6 +11,11 @@ const nextConfig = {
   outputFileTracingRoot: __dirname,
   images: {
     formats: ['image/avif', 'image/webp'],
+    // Mobile-first device sizes — verhindert Timeouts auf Netlify Image-Optimizer
+    deviceSizes: [360, 640, 750, 828, 1080, 1200, 1920],
+    imageSizes: [64, 96, 128, 256, 384],
+    // 1 Jahr CDN-Cache für optimierte Varianten
+    minimumCacheTTL: 31536000,
     remotePatterns: [
       { protocol: 'https', hostname: 'i0.wp.com' },
       { protocol: 'https', hostname: 'ibs-industriebodensanierung.de' },
