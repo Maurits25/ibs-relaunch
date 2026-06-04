@@ -21,15 +21,24 @@
     font-feature-settings: 'cv11', 'ss01';
   }
 
-  /* Verhindert ungesunde Umbrüche bei zusammengesetzten Begriffen */
-  h1, h2, h3 {
-    hyphens: auto;
-    -webkit-hyphens: auto;
-    overflow-wrap: anywhere;
+  /* KEINE automatische Silbentrennung für Überschriften — verhindert
+     unschöne Mid-Word-Brüche wie „be-schichten" oder „schüt-zen".
+     `text-wrap: balance` sorgt für ausgewogene Zeilen ohne Umbrüche
+     mitten in Wörtern. */
+  h1, h2, h3, h4 {
+    hyphens: manual;
+    -webkit-hyphens: manual;
+    overflow-wrap: normal;
+    word-break: normal;
     text-wrap: balance;
   }
 
+  /* Body-Text bleibt mit pretty wrap — keine Silbentrennung. */
   p, li {
+    hyphens: manual;
+    -webkit-hyphens: manual;
+    overflow-wrap: break-word;
+    word-break: normal;
     text-wrap: pretty;
   }
 
@@ -96,15 +105,15 @@
   }
 
   .heading-1 {
-    @apply font-display font-bold tracking-tight text-fluid-5xl leading-[1.05];
+    @apply font-display font-bold tracking-tight text-fluid-5xl leading-[1.1];
   }
 
   .heading-2 {
-    @apply font-display font-bold tracking-tight text-fluid-4xl leading-[1.1];
+    @apply font-display font-bold tracking-tight text-fluid-4xl leading-[1.15];
   }
 
   .heading-3 {
-    @apply font-display font-bold tracking-tight text-fluid-2xl leading-[1.2];
+    @apply font-display font-bold tracking-tight text-fluid-2xl leading-[1.25];
   }
 
   .lede {

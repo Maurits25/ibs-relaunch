@@ -31,11 +31,7 @@ export function HomeHero() {
             </span>
 
             <h1 className="mt-5 heading-1 text-balance text-white">
-              Industrieböden{' '}
-              <span className="relative inline-block">
-                <span className="relative z-10">sanieren,&nbsp;beschichten,&nbsp;schützen.</span>
-                <span aria-hidden className="absolute -inset-x-1 bottom-1 h-3 -z-0 bg-ibs-accent/40 blur-sm rounded-full" />
-              </span>
+              Industrieböden sanieren, beschichten, schützen.
             </h1>
 
             <p className="mt-6 lede max-w-2xl text-ibs-fog">

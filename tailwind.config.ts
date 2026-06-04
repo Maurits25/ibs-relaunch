@@ -34,14 +34,17 @@ const config: Config = {
         // Fluid Typography — verhindert Layoutbrüche & ungesunde Umbrüche
         'fluid-xs':   'clamp(0.78rem, 0.74rem + 0.18vw, 0.88rem)',
         'fluid-sm':   'clamp(0.88rem, 0.82rem + 0.22vw, 0.98rem)',
-        'fluid-base': 'clamp(1.00rem, 0.95rem + 0.25vw, 1.10rem)',
-        'fluid-lg':   'clamp(1.10rem, 1.00rem + 0.40vw, 1.30rem)',
-        'fluid-xl':   'clamp(1.25rem, 1.05rem + 0.80vw, 1.55rem)',
-        'fluid-2xl':  'clamp(1.55rem, 1.30rem + 1.00vw, 1.95rem)',
-        'fluid-3xl':  'clamp(1.85rem, 1.50rem + 1.80vw, 2.55rem)',
-        'fluid-4xl':  'clamp(2.20rem, 1.70rem + 2.50vw, 3.35rem)',
-        'fluid-5xl':  'clamp(2.60rem, 1.90rem + 3.20vw, 4.20rem)',
-        'fluid-6xl':  'clamp(3.00rem, 2.10rem + 4.20vw, 5.20rem)',
+        // Fluid Typography — Mobile-first kalibriert.
+        // Min-Werte gehen tiefer, damit auf 360-400px-Devices lange Komposita
+        // (Industriebodensanierung, Epoxidharz­beschichtung) ohne Hyphenation passen.
+        'fluid-base': 'clamp(0.95rem, 0.90rem + 0.20vw, 1.10rem)',
+        'fluid-lg':   'clamp(1.05rem, 0.95rem + 0.40vw, 1.30rem)',
+        'fluid-xl':   'clamp(1.15rem, 1.00rem + 0.65vw, 1.55rem)',
+        'fluid-2xl':  'clamp(1.30rem, 1.10rem + 0.95vw, 1.95rem)',
+        'fluid-3xl':  'clamp(1.50rem, 1.20rem + 1.40vw, 2.55rem)',
+        'fluid-4xl':  'clamp(1.70rem, 1.30rem + 1.85vw, 3.35rem)',
+        'fluid-5xl':  'clamp(1.90rem, 1.40rem + 2.40vw, 4.20rem)',
+        'fluid-6xl':  'clamp(2.10rem, 1.50rem + 2.90vw, 5.20rem)',
       },
       spacing: {
         'fluid-1':  'clamp(0.40rem, 0.35rem + 0.20vw, 0.55rem)',
